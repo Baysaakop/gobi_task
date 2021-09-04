@@ -1,0 +1,111 @@
+.card {
+    font-family: 'Lato', sans-serif;
+}
+
+.card .card-img-container {
+    position: relative;
+}
+
+.card .card-img-container .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;    
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card .card-img-container .card-img:hover {
+    opacity: 0.8;
+}
+
+.card .card-img-container .new {
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.6);            
+}
+
+.card .card-img-container .love {
+    position: absolute;
+    bottom: 8px;
+    right: 14px;
+    width: 36px;
+    height: 36px;    
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.6);          
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 1;    
+}
+
+.card .card-img-container .love img {
+    width: 18px;
+    height: 16px;      
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.card .card-img-container .love.checked img {    
+    opacity: 1;
+}
+
+.card .card-img-container .love img:hover {
+    opacity: 1;
+}
+
+.card .card-img-container .love.checked img:hover {    
+    opacity: 0.5;
+}
+
+.card .card-title {        
+    font-size: 12px;
+    margin-bottom: 0%;
+}
+
+.card .card-colors {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.card .card-colors .color {
+    width: 12px;
+    height: 12px;        
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    margin-right: 14px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card .card-colors .color.checked {
+    border: 2px solid #000;
+}
+
+.card .card-colors .color:hover {
+    border: 2px solid #000;
+}
+
+
+.card .card-description {        
+    font-size: 11px;
+    margin: 0%;
+}
+
+.card .card-price {        
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.card .card-price-with-sale { 
+    color: #B00020;       
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 8px;
+}

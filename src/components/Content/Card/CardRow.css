@@ -1,0 +1,11 @@
+.card-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.card-row .column {
+    width: 25%;
+    padding: 0 8px;    
+}

@@ -1,0 +1,21 @@
+.category {
+    padding: 60px 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+  
+.category .column {
+    width: 33.33%;
+    padding: 0 4px;    
+}
+
+.category .column .title {
+    display: block;
+    text-align: center;
+    padding: 32px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+}
+  

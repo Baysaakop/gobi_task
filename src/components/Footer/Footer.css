@@ -1,0 +1,41 @@
+.footer .top {
+    padding-top: 64px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .top .left {
+    background: #fff;    
+    padding-top: 56px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 80%;
+}
+
+.footer .top .left .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer .top .left .payments {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 32px 0;
+}
+
+.footer .top .right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-left: 60px;
+    padding-top: 56px;
+}
+
+.footer .bot {
+    background: #F5F7F6;
+    padding: 16px 80px;
+}

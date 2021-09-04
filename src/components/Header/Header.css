@@ -59,6 +59,7 @@
   display: inline-block;
   color: #fff;
   text-decoration: none;
+  font-size: 13px;
   margin-right: 32px;
   margin-top: 8px;
 }
@@ -84,6 +85,7 @@
 .header .bot .center .logo {
   height: 44px;
   width: auto;
+  cursor: pointer;
 }
 
 .header .bot .right {
@@ -96,6 +98,10 @@
 .header .bot .right div {
   margin-left: 24px;
   cursor: pointer;
+}
+
+.header .bot .right img:hover {  
+  opacity: 0.75;
 }
 
 .header .bot .right .search {
