@@ -1,0 +1,135 @@
+.content .top {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.content .top .home_img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.content .top .overlay {
+  position: absolute;
+  top: 33vh;
+  right: 12%;
+}
+
+.content .top .overlay .sale_img {
+  width: 400px;
+  height: auto;
+}
+
+.content .top .overlay .shop_now {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.content .winter {
+  padding: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content .winter .left,
+.content .winter .right {
+  width: 50%;
+}
+
+.content .winter .left h1 {
+  font-size: 46px;
+}
+
+.content .winter .left p {
+  font-size: 22px;
+  color: #636363;
+}
+
+.content .winter .right .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.content .winter .right .row .column1 {
+  width: 66%;
+  padding: 0 4px;
+}
+
+.content .winter .right .row .column2 {
+  width: 33%;
+  padding: 0 4px;
+}
+
+.content .winter .right .row .column1 img {
+  margin-top: 8px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.content .winter .right .row .column2 img {
+  margin-top: 8px;
+  width: calc(100% - 5px);
+  vertical-align: middle;
+}
+
+.content .winter .right .note {
+  display: block;
+  width: 100%;
+  text-align: end;
+  font-size: 16px;
+  color: #585858;
+}
+
+.content .women {
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content .women .column {
+  width: 33.33%;
+  padding: 0 4px;
+  position: relative;
+}
+
+.content .women .column img {
+  width: 100%;
+  height: auto;
+}
+
+.content .women .column .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .women .column .overlay .left {
+  color: #fff;
+  font-size: 30px;
+}
+.content .women .column .overlay .right img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.content .women .column .title {
+  display: block;
+  text-align: center;
+  padding: 32px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}

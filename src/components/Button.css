@@ -1,0 +1,20 @@
+.btn {
+  width: 184px;
+  height: 56px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn .text {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
