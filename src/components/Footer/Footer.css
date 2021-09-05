@@ -43,9 +43,14 @@
 .footer.xs .top {
     display: flex;
     flex-direction: column;
+    padding: 0%;
 }
 
 .footer.xs .top .left .menu {
     display: flex;
     flex-direction: column;
+}
+
+.footer.xs .top .left {
+    background: #F5F7F6;        
 }

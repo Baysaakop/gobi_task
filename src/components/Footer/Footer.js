@@ -9,9 +9,6 @@ import Payment2 from './images/Payment2.svg'
 import Payment3 from './images/Payment3.svg'
 import Payment4 from './images/Payment4.svg'
 import Payment5 from './images/Payment5.svg'
-import Payment6 from './images/Payment6.svg'
-import Payment7 from './images/Payment7.svg'
-import Payment8 from './images/Payment8.svg'
 
 function Footer (props) {
     return (
@@ -53,10 +50,7 @@ function Footer (props) {
                         <img alt="img2" src={Payment2} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />
                         <img alt="img3" src={Payment3} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />
                         <img alt="img4" src={Payment4} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />
-                        <img alt="img5" src={Payment5} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />
-                        <img alt="img6" src={Payment6} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />
-                        <img alt="img7" src={Payment7} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />
-                        <img alt="img8" src={Payment8} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />
+                        <img alt="img5" src={Payment5} style={{ width: '40px', height: '24px', objectFit: 'fill', marginRight: '12px' }} />                        
                     </div>
                 </div>
                 <div className="right">
