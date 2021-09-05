@@ -1,7 +1,9 @@
 import Button from '../Button'
 import './Content.css'
 import HomeImg from './images/home_img.png'
+import HomeImg1 from './images/home_img1.png'
 import SaleImg from './images/sale_img.png'
+import SaleImgBlack from './images/sale_img_black.png'
 import WinterImg1 from './images/winter_img1.png'
 import WinterImg2 from './images/winter_img2.png'
 import WinterImg3 from './images/winter_img3.png'
@@ -20,6 +22,60 @@ import CardImg8 from './images/card_img8.png'
 import AboutImg from './images/about_img.png'
 import Category from './Category/Category'
 import CardRow from './Card/CardRow'
+
+const category1 = [
+    {
+        img: WomenImg1,
+        text: "CARDIGANS"
+    },
+    {
+        img: WomenImg2,
+        text: "CARDIGANS",
+        title: 'WOMEN'
+    },
+    {
+        img: WomenImg1,
+        text: "CARDIGANS"
+    },
+]
+
+const category2 = [
+    {
+        img: MenImg1,
+        text: "CARDIGANS"
+    },
+    {
+        img: MenImg2,
+        text: "CARDIGANS",
+        title: 'MEN'
+    },
+    {
+        img: MenImg1,
+        text: "CARDIGANS"
+    },
+]
+
+const category3 = [
+    {
+        img: WomenImg1,
+        text: "Кардиганы"
+    },
+    {
+        img: WomenImg2,
+        text: "Платья",        
+    },
+]
+
+const category4 = [
+    {
+        img: MenImg1,
+        text: ""
+    },
+    {
+        img: MenImg2,
+        text: "POLO",        
+    },
+]
 
 const row1 = [
     {        
@@ -91,46 +147,84 @@ const row2 = [
     }
 ]
 
-function Content () {
+function Content (props) {
 
     return (
-        <div className="content">
+        <div className={ props.breakpoint === "lg" ? "content lg" : props.breakpoint === "sm" ? "content sm" : "content xs" }>
             <div className="top">
-                <img className="home_img" alt="home" src={HomeImg} />
+                <img className="home_img" alt="home" src={props.breakpoint === "xs" ? HomeImg1 : HomeImg} />
                 <div className="overlay">
-                    <img className="sale_img" alt="sale" src={SaleImg} />   
+                    <img className="sale_img" alt="sale" src={props.breakpoint === "xs" ? SaleImgBlack : SaleImg} />   
                     <div className="shop_now">
-                        <Button text="SHOP NOW" color="#000" background="#fff" />
+                        {props.breakpoint === "xs" ? 
+                            <Button text="SHOP NOW" color="#fff" background="#272727    " /> 
+                        :
+                            <Button text="SHOP NOW" color="#000" background="#fff" /> 
+                        }                        
                     </div>                 
                 </div>  
             </div>
-            <div className="winter">
-                <div className="left">
-                    <h1>WINTER SPICE 2020</h1>
-                    <p>Infusion of summer pieces and cashmere <br/>silk blends.</p>
-                    <div>
-                    <Button text="SHOP NOW" color="#fff" background="#272727" />
-                    </div>
-                </div>
-                <div className="right">   
-                    <div className="row">
-                        <div className="column1">
-                            <img alt="img" src={WinterImg1} />
+            {props.breakpoint === "xs" ? 
+                <div className="winter">                    
+                    <div className="right">   
+                        <div className="row">
+                            <div className="column1">
+                                <img alt="img" src={WinterImg1} />
+                            </div>
+                            <div className="column2">
+                                <img alt="img" src={WinterImg2} />
+                                <img alt="img" src={WinterImg3} />
+                            </div>               
+                        </div>                                              
+                    </div>    
+                    <div className="left">
+                        <h1>WINTER SPICE 2020</h1>
+                        <p>Infusion of summer pieces and <br/>cashmere silk blends.</p>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Button text="SHOP NOW" color="#fff" background="#272727" />
                         </div>
-                        <div className="column2">
-                            <img alt="img" src={WinterImg2} />
-                            <img alt="img" src={WinterImg3} />
-                        </div>               
-                    </div>                      
-                    <p className="note">Infusion of summer pieces and cashmere silk blends.</p>
-                </div>                
-            </div> 
-            <Category img1={WomenImg1} img2={WomenImg2} img3={WomenImg1} title="WOMEN" text="CARDIGANS" />                        
-            <Category img1={MenImg1} img2={MenImg2} img3={MenImg1} title="MEN" text="CARDIGANS" />     
+                    </div>            
+                </div> 
+            :
+                <div className="winter">
+                    <div className="left">
+                        <h1>WINTER SPICE 2020</h1>
+                        <p>Infusion of summer pieces and cashmere <br/>silk blends.</p>
+                        <div>
+                        <Button text="SHOP NOW" color="#fff" background="#272727" />
+                        </div>
+                    </div>
+                    <div className="right">   
+                        <div className="row">
+                            <div className="column1">
+                                <img alt="img" src={WinterImg1} />
+                            </div>
+                            <div className="column2">
+                                <img alt="img" src={WinterImg2} />
+                                <img alt="img" src={WinterImg3} />
+                            </div>               
+                        </div>                      
+                        <p className="note">Infusion of summer pieces and cashmere silk blends.</p>
+                    </div>                
+                </div> 
+            }                           
+            { props.breakpoint === "xs" ? (
+                <>
+                    <p style={{ textAlign: 'center', fontSize: '22px', fontWeight: '700', fontFamily: 'Lato' }}>WOMEN</p>
+                    <Category breakpoint={props.breakpoint} data={category3 } />       
+                    <p style={{ textAlign: 'center', fontSize: '22px', fontWeight: '700', fontFamily: 'Lato' }}>MEN</p>                 
+                    <Category breakpoint={props.breakpoint} data={category4} />    
+                </>
+            ) : (
+                <>                    
+                    <Category breakpoint={props.breakpoint} data={category1} />                        
+                    <Category breakpoint={props.breakpoint} data={category2} />    
+                </>
+            )}            
             <div className="gift">
                 <p className="title">TO GET AND TO GIFT</p>
-                <CardRow data={row1} />
-                <CardRow data={row2} />
+                <CardRow breakpoint={props.breakpoint} data={row1} />
+                <CardRow breakpoint={props.breakpoint} data={row2} />
             </div>                   
             <div className="about">
                 <div className="left">

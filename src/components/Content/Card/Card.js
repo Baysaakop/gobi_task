@@ -34,7 +34,7 @@ function Card (props) {
                     <div className={ selectedColor === 4 ? "color checked" : "color"} style={{ background: '#000000' }} onClick={() => onSelectColor(4)} />
                     <div className={ selectedColor === 5 ? "color checked" : "color"} style={{ background: '#718CBF' }} onClick={() => onSelectColor(5)} />
                     <div className={ selectedColor === 6 ? "color checked" : "color"} style={{ background: '#985B4F' }} onClick={() => onSelectColor(6)} />         
-                    <div className={ selectedColor === 7 ? "color checked" : "color"} style={{ background: '#C66666' }} onClick={() => onSelectColor(7)} />                      
+                    <div className={ selectedColor === 7 ? "color checked" : "color"} style={{ background: '#C66666' }} onClick={() => onSelectColor(7)} />                       
                     <div>+17</div>                                            
                 </div>
             :

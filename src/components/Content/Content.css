@@ -1,6 +1,6 @@
 .content .top {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 40px;    
 }
 
 .content .top .home_img {
@@ -11,17 +11,9 @@
 
 .content .top .overlay {
   position: absolute;
-  top: 40vh;
-  right: 12%;
-}
-
-.content .top .overlay .sale_img {
-  width: 400px;
-  height: auto;
 }
 
 .content .top .overlay .shop_now {
-  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,4 +137,81 @@
 
 .content .subscribe .description {
   margin: 0%;
+}
+
+/* RESPONSIVE */
+
+.content.lg .top .overlay {
+  top: 40vh;
+  right: 12%;
+}
+
+.content.lg .top .overlay .sale_img {
+  width: 400px;
+  height: auto;
+}
+
+.content.xs .top .overlay {
+  position: absolute;  
+  top: 640px;
+  padding: 40px;
+  right: 8px;
+  left: 8px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(238, 243, 255, 0.8) 100%);
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 9px;  
+  margin-bottom: 16px;
+}
+
+.content.xs .top .overlay .sale_img {
+  width: 100%;
+  height: auto;
+}
+
+.content.xs .winter {
+  background: linear-gradient(0deg, #F7F8FB, #F7F8FB), #FDF4ED;  
+  margin-top: 240px;  
+  display: flex;
+  flex-direction: column;
+  padding: 24px 8px;
+}
+
+.content.xs .winter .right,
+.content.xs .winter .left {
+  width: 100%;  
+  text-align: center;
+}
+
+.content.xs .winter .left h1 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content.xs .winter .left p {
+  font-size: 18px;
+  color: #000;
+}
+
+.content.xs .gift {
+  padding: 8px;
+}
+
+.content.xs .about {
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content.xs .about .left,
+.content.xs .about .right {
+  width: 100%;
+}
+
+.content.xs .about .right {
+ padding: 8px;
 }

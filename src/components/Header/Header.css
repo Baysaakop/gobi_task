@@ -4,8 +4,7 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
+  align-items: center;  
 }
 
 .header .top .left {
@@ -48,11 +47,14 @@
   padding: 0 40px;
 }
 
+.header .bot .column {
+  width: 33.33%;
+}
+
 .header .bot .left {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  width: 33%;
+  align-items: center;  
 }
 
 .header .bot .left a {
@@ -78,12 +80,11 @@
 }
 
 .header .bot .center {
-  text-align: center;
-  width: 33%;
+  text-align: center;  
 }
 
 .header .bot .center .logo {
-  height: 44px;
+  height: 40px;
   width: auto;
   cursor: pointer;
 }
@@ -91,13 +92,14 @@
 .header .bot .right {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 33%;
+  align-items: center;  
 }
 
-.header .bot .right div {
-  margin-left: 24px;
+.header .bot .icon {
+  margin: 0 12px;
   cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 
 .header .bot .right img:hover {  
@@ -105,14 +107,14 @@
 }
 
 .header .bot .right .search {
-  position: relative;
+  position: relative;  
 }
 
-.header .bot .right input {
-  padding: 12px;
+.header .bot .right input {  
   border-radius: 8px;
   border: 0;
   width: 260px;
+  padding: 16px;
 }
 
 .header .bot .right input:focus {
@@ -121,7 +123,33 @@
 
 .header .bot .right .clear {
   position: absolute;
-  top: 8px;
+  top: 12px;
   right: 8px;
   cursor: pointer;
+}
+
+/* Responsive */
+
+.header.lg .top {
+  padding: 0 40px;
+}
+
+.header.sm .top,
+.header.xs .top {
+  padding: 0 16px;
+}
+
+.header.xs .top .center {
+  display: none;
+}
+
+.header.sm .bot,
+.header.xs .bot {
+  height: 50px;
+  padding: 0 8px;
+}
+
+.header.sm .bot .center .logo,
+.header.xs .bot .center .logo {
+  height: 28px;
 }

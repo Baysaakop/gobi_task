@@ -39,3 +39,13 @@
     background: #F5F7F6;
     padding: 16px 80px;
 }
+
+.footer.xs .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer.xs .top .left .menu {
+    display: flex;
+    flex-direction: column;
+}

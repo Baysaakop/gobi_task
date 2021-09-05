@@ -15,7 +15,7 @@ import Payment8 from './images/Payment8.svg'
 
 function Footer (props) {
     return (
-        <div className="footer">
+        <div className={ props.breakpoint === "lg" ? "footer lg" : props.breakpoint === "sm" ? "footer sm" : "footer xs" }>
             <div className="top">
                 <div className="left">
                     <div className="menu">
